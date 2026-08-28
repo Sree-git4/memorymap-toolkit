@@ -1,0 +1,8 @@
+{
+  "builds": [
+    { "src": "memorymap_toolkit/wsgi.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "memorymap_toolkit/wsgi.py" }
+  ]
+}
